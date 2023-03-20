@@ -30,7 +30,7 @@ nav ul li a {
     flex-direction: column;
     text-align: center;
     height: 700px;
-    background-image: url(/assets/img/Coffe\ Header.png);
+    background-image: url(../assets/img/Coffe\ Header.png);
     background-size: cover;
     color: white;
     border-radius: 0 0 30px 30px;
