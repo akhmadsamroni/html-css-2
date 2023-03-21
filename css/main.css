@@ -30,7 +30,7 @@ nav ul li a {
     flex-direction: column;
     text-align: center;
     height: 700px;
-    background-image: url(/assets/img/Coffe\ Header.png);
+    background-image: url(../assets/img/Coffe\ Header.png);
     background-size: cover;
     color: white;
     border-radius: 0 0 30px 30px;
@@ -59,18 +59,22 @@ nav ul li a {
     justify-content: initial;
     flex-direction: column;
 }
-.txt h3 {
+h3 {
     color: #0F8B8D;
     font-weight: 800;
     font-size: 48px;
+}
+p {
+    font-size: 24px;
+    color: black;
+}
+.who-h3 {
     text-decoration: underline;
     text-decoration-color: #EC9A29;
     text-underline-offset: 20px;
     margin-bottom: 40px;
 }
 .txt p {
-    color: black;
-    font-size: 24px;
     line-height: 28.8px;
 }
 .who-img {
@@ -103,6 +107,8 @@ button {
     border-radius: 55px;
     padding: 20px 50px;
     margin-top: 65px;
+    font-size: 24px;
+    color: white;
 }
 button a {
     color: white;
@@ -132,10 +138,7 @@ button a {
     flex-direction: column;
     margin-bottom: 50px;
 }
-.find-us-instagram h3 {
-    color: #0F8B8D;
-    font-weight: 800;
-    font-size: 48px;
+.find-h3 {
     display: flex;
     justify-content: center;
 }
@@ -163,14 +166,6 @@ button a {
     line-height: 50px;
     margin-bottom: 100px;
 }
-.ask h3 {
-    color: #0F8B8D;
-    font-weight: 800;
-    font-size: 48px;
-}
-.ask p {
-    font-size: 24px;
-}
 .ask button {
     margin: auto 0;
 }
@@ -181,6 +176,7 @@ button a {
     display: flex;
     font-size: 24px;
     border-radius: 20px 20px 0 0;
+    margin-top: 10%;
 }
 .footer-wrapper ul {
     width: 20%;
@@ -201,7 +197,8 @@ button a {
     margin-left: 5%;
     filter: invert();
 }
-/* ================================= MENU PAGE ====================== */
+/* ================================= MENU PAGE ============================================================================================== */
+/* =========================================================== PRODUCT ====================== */
 .nav-color {
     background-color: #0F8B8D;
     height: 145px;
@@ -209,8 +206,153 @@ button a {
     display: flex;
     justify-content: space-around;
     position: fixed;
-    z-index: 10;
+}
+.mnu-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    text-align: center;
+}
+.mnu-h3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 245px;
+    margin-bottom: 40px;
+}
+.mnu-menu-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10%;
+}
+.mnu-menu-img p {
+    color: white;
+    margin-top: 6%;
+}
+.img-wrap {
+    background-image: url(../assets/img/Coffee\ background.png);
+    width: 19%;
+    height: 10%;
+    margin: 3% 7% 0 7%;
+    border-radius: 20px;
+}
+.img-wrap p {
+    font-size: 17px;
+}
+.img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+/* ================================= DETAIL PAGE ====================== */
+.mnu-detail {
+    display: flex;
+    flex-direction: column;
+}
+.detail {
+    display: flex;
+    justify-content: space-around;
+    margin: 10% 0 10% 10%;
+}
+.dtl {
+    width: 50%;
+    margin: 8%;
+}
+.dtl p {
+    margin: 30px 0 60px 0;
+}
+.desc {
+    margin: 0 10%;
+}
+.desc button {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.desc-h3 {
+    text-decoration: underline;
+    text-decoration-color: #EC9A29;
+    text-underline-offset: 20px;
+    margin-bottom: 40px;
+}
+.arrow {
+    transform: scaleX(-1);
+    filter: invert();
+}
+.backto {
+    font-size: 25px;
 }
 /* ================================= FIND US PAGE ====================== */
+.mnu-find {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mnu-find-address {
+    display: flex;
+    flex-direction: column; 
+    width: 40%;
+    margin-top: 18%;
+}
+.mnu-find-address h3 {
+    margin-bottom: 5%;
+}
+.address {
+    width: 80%;
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 20px;
+    border: 1px solid #D2D2D2;
+}
+.address h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5%;
+}
+.address p {
+    font-size: 20px;
+    line-height: 35px;
+}
+.mnu-find img {
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    margin: 52% 1% 0 15%;
+}
 /* ================================= MESSAGE PAGE ====================== */
-/* ================================= DETAIL PAGE ====================== */
+.mnu-message {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mnu-message h3 {
+    margin-top: 18%;
+}
+.mnu-message form {
+    height: 100%;
+    width: 50%;
+    margin-bottom: 10%;
+    border-radius: 20px;
+    border: 1px solid #D2D2D2;
+}
+.form {
+    margin: 5%;
+    display: flex;
+}
+.form input, textarea {
+    border-radius: 20px;
+    border: 1px solid #D2D2D2;
+    resize: none;
+    width: 100%;
+    text-indent: 10px;
+}
+.form label {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 3%;
+    width: 50%;
+}
+form button {
+    margin-left: 40%;
+    margin-bottom: 10%;
+}
