@@ -4,25 +4,37 @@
 }
 /* ersponsive mobile */
 @media (max-width:670px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+    }
     /* ================================= NAVBAR ====================== */
-    .nav-trans {
+    nav {
         height: 104px;
-        width: 100%;
+        width: auto;
+        display: flex;
         flex-direction: column;
     }
-    nav .logo img {
+    header nav .logo img {
         width:40%;
     }
-    nav ul {
-        width: 100%;
+    header nav ul {
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
     }
-    nav ul li a {
+    header nav ul li {
+        display: flex;
+    }
+    header nav ul li a {
         font-size: 14px;
     }
     /* ================================= HERO ====================== */
     .hero {
         height: 478px;
         width: 100%;
+        background-position: none;
     }
     .hero h1 {
         font-size: 36px;
@@ -32,7 +44,7 @@
     }
     /* ================================= WHO ARE YOU ====================== */
     .who-are-you {
-        width: 100%;
+        width: 100vw;
         height: 335px;
     }
     .flex {
@@ -75,7 +87,7 @@
     }
     /* ================================= PRODUCT SHOWCASE ====================== */
     .product {
-        width: 100%;
+        width: 100vw;
         height: auto;
         display: flex;
         flex-direction: column-reverse;
@@ -155,7 +167,7 @@
     }
     /* ================================= ASK US MORE ====================== */
     .ask {
-        width: 100%;
+        width: 100vw;
         height: auto;
         text-align: center;
         margin-bottom: 0;
@@ -173,7 +185,7 @@
     }
     /* ================================= FOOTER ====================== */
     .footer-wrapper {
-        width: 100%;
+        width: 100vw;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -215,5 +227,147 @@
         text-align: center;
         margin: 15% 0 5% 0;
     }
-    
+    /* ================================= MENU PAGE ============================================================================================== */
+    /* =========================================================== PRODUCT ====================== */
+    .nav-color {
+        height: 104px;
+        width: 100%;
+        background-color: #0F8B8D;
+        flex-direction: column;
+    }
+    .mnu-h3 {
+        margin: 30% 0 3% 0;
+        text-decoration: none;
+    }
+    .img-wrap {
+        width: 25%;
+        height: 25%;
+        margin: 3% 2% 0 2%;
+        border-radius: 5%;
+    }
+    .img-wrap p {
+        font-size: 12px;
+    }
+    /* ================================= DETAIL PAGE ====================== */
+    .mnu-detail {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .detail {
+        display: flex;
+        flex-direction: column;
+        margin: 30% 0 5% 0;
+    }
+    .detail img {
+        width: 100%;
+    }
+    .dtl {
+        width: 100%;
+        margin: 8%;
+    }
+    .dtl h3 {
+        text-decoration: none;
+        margin: 0;
+    }
+    .dtl p {
+        width: 100%;
+        margin: 2% 0 2% 0;
+    }
+    .desc {
+        width: 60%;
+        margin: 0 8% 0 8%;
+    }
+    .desc-h3 {
+        text-decoration: none;
+        text-decoration-color: #EC9A29;
+        border-bottom: 2px solid #EC9A29;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+    }
+    .arrow {
+        width: 15%;
+        height: auto;
+    }
+    /* ================================= FIND US PAGE ====================== */
+    .mnu-find {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .mnu-find img {
+        border-radius: 5%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.7);
+        margin: 20% 0 0 0;
+    }
+    .mnu-find-address {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        width: 100vw;
+        margin: -10% 20% 5% 20%;
+    }
+    .mnu-find-address h3 {
+        margin-bottom: 5%;
+        text-decoration: none;
+    }
+    .address {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        padding: 5%;
+        border-radius: 1.5%;
+    }
+    .address h4 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5%;
+    }
+    .address p {
+        width: 100%;
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+    /* ================================= MESSAGE PAGE ====================== */
+    .mnu-message {
+        display: flex;
+        flex-direction: column;
+    }
+    .mnu-message h3 {
+        margin-top: 35%;
+    }
+    .mnu-message form {
+        height: auto;
+        width: 70%;
+        border-radius: 3%;
+    }
+    .form {
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form input, textarea {
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 2% 0;
+    }
+    .form label {
+        font-size: 12px;
+        margin: 0 0 3% 0;
+        width: 50%;
+    }
+    form button {
+        margin-left: 40%;
+        margin-bottom: 10%;
+    }
+    /* ================================= DETAIL PAGE ====================== */
+
 }

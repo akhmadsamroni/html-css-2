@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 /* ================================= NAVBAR ====================== */
-.nav-trans {
+nav {
     height: 145px;
     width: 100%;
     background-color: transparent;
@@ -25,11 +25,12 @@ nav ul li a {
 }
 /* ================================= HERO ====================== */
 .hero {
+    width: 100%;
+    height: 700px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 700px;
     background-image: url(../assets/img/Coffe\ Header.png);
     background-size: cover;
     color: white;
@@ -230,7 +231,7 @@ footer p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 10%;
+    margin: 0 5%;
 }
 .mnu-menu-img p {
     color: white;
@@ -239,12 +240,26 @@ footer p {
 .img-wrap {
     background-image: url(../assets/img/Coffee\ background.png);
     width: 19%;
-    height: 10%;
+    height: 20%;
     margin: 3% 7% 0 7%;
-    border-radius: 20px;
+    border-radius: 10%;
+}
+.img-wrap:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.img-wrap:hover img {
+    transform: scale(1.1);
+    transform: translateY(-35%);
+    transition: all 0.3s ease-in-out;
+  }
+.img-wrap:hover p{
+    transform: translateY(900%);
+    transition: all 0.3s ease-in-out;
 }
 .img-wrap p {
-    font-size: 17px;
+    font-size: 20px;
+    font-weight: 700;
 }
 .img-wrap img {
     width: 100%;
